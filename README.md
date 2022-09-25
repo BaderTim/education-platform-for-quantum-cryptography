@@ -9,7 +9,7 @@ Our initial goal was to create a tool that primary helps bachelor students to ge
 
 After doing a requirements analysis we came to the conclusion that the software had to have a lot of visual appealing and interactive elements. Since the software is supposed to be introduced to students by their professors, they should be able to configure the content as neccessary for their own individual teaching intentions.   
 
-This is why the website's content can be modified by making use of the file structure inside the `public` folder. Each page is represented by a _LaTeX_ file which makes use of the basic syntax in addition to custom LaTeX Elements.
+This is why the website's content can be modified by making use of the file structure inside the `public` folder. Each page is represented by a _LaTeX_ file which makes use of the basic syntax in addition to custom LaTeX Elements. ([Read more](https://badertim.github.io/education-platform-for-quantum-cryptography/info))
 
 
 ## Repository
