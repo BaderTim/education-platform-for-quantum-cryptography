@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "https://badertim.github.io/education-platform-for-quantum-cryptography/static/js/main.bb5a91ca.js",
+    "index.html": "https://badertim.github.io/education-platform-for-quantum-cryptography/index.html",
+    "main.bb5a91ca.js.map": "https://badertim.github.io/education-platform-for-quantum-cryptography/static/js/main.bb5a91ca.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.bb5a91ca.js"
+  ]
+}
