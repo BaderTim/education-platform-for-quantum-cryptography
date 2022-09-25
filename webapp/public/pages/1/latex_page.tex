@@ -1,0 +1,82 @@
+
+\newline
+\newline
+\subsubsection[align=center]{Herzlich willkommen auf der}
+\section[align=center]{Bildungsplatform für Quantenkryptografie}
+\hr
+\begin{figure}[noborder=true]
+
+    \includegraphics[width=50]{content/Bild1.png}
+    \caption{}
+
+\end{figure}
+
+
+Du befindest dich auf der Bildungsplattform für Quantenkryptografie. Du hast hier die Möglichkeit Dich interaktiv mit den verschiedenen Themen der Quantenkryptografie zu beschäftigen.
+Das Einleitungskapitel soll einen Überblick über die vielen Möglichkeiten innerhalb der Plattform bieten.
+\newline
+\newline
+\newline
+\subsection[align=left]{Erste Schritte}
+Natürlich darfst Du auch direkt loslegen und dich Stück für Stück durch die Kapitel arbeiten. Es kann sich jedoch lohnen, zunächst einige grundlegende Dinge zu erfahren. \newline
+\newline
+\subsubsection{Einstellungen}
+Über die \hyperlink[url=/settings]{Einstellungsseite} (Icon befindet sich rechts oben in der Navigationsleiste) können grundlegende Anpassungen vorgenommen werden. Damit der Chat-Bot genutzt werden kann, ist es notwendig, einen OpenAPI API-Key zu hinterlegen.
+\newline
+\newline
+\subsubsection{Infoseite}
+Wir empfehlen Dir auch einen Blick auf die \hyperlink[url=/info]{Infoseite} (Icon befindet sich neben den Einstellungen in der Navigationsleiste) zu werfen, dort sind technische Informationen zur Plattform zu finden.
+
+\newline 
+\newline 
+\newline
+\hr
+\newline
+\section[align=left]{Funktionen innerhalb der Kapitel}
+Die Bildungsplattform unterstützt viele verschiedene Elemente, damit die Inhalte interaktiv gestaltet werden können. Die Funktionen lassen sich beliebig in die einzelnen Kapitelseiten integrieren.
+\newline \newline
+\subsection[align=left]{Formatierung}
+Zur Formatierung der Kapitel wird eine eigene Syntax genutzt, die sich an Latex orientiert. Die unterstützten Befehle sind auf der Infoseite näher beschrieben. Dies ist jedoch erst bei der Veränderung oder Erweiterung der Inhalte relevant. \newline \newline
+
+\subsection[align=left]{mathematische Formeln}
+Die Plattform unterstützt das Anzeigen von mathematische Formeln. Die Formeln werden dabei in Latex-Syntax definiert und im Browser dargestellt. Die grafische Darstellung der Formeln erfolgt durch das Modul \textit{MathJax}.
+Durch einen Rechtsklick auf eine mathematische Formel kann der Quellcode sowohl angezeigt, als auch kopiert werden. Dies ist hilfreich um die Formel zu überprüfen oder weiterzuverwenden.
+\newline
+
+Hier die Beispielrechnung 1 + 1 = 2: \begin{equation}\begin{gathered}  1 + 1 = 2 \end{gathered}\end{equation}
+\newline
+
+
+\subsection[align=left]{Medieninhalte}
+Es können Bild- und Videoelemente eingebunden und mit einer Unterschrift versehen werden.
+
+\newline \newline
+
+\subsection[align=left]{Chatbot}
+Der Chatbot kann auf jeder Kapitelseite genutzt werden. Das Fenster für den Chat befindet sich unten rechts. Die Antworten des Bots stammen vom GPT-3 Sprachmodell.
+Es werden menschenähnliche Antworten erzeugt, welche auf dem Kontext des jeweiligen Kapitels basieren. Um eine möglichst relevante Antwort zu erhalten, sollten die Fragen möglichst passend zum jeweiligen Kapitel gestellt werden. \newline
+\newline
+\subsection[align=left]{Simulation}
+Quantenschaltungen können mittels Q.js eingebunden werden. Hier ein Beispiel: 
+\newline
+\newline
+\subsubsection{HZH-Gatefolge auf ein Qubit}
+\circuit[name=circuit1,inline=true,editable=false,results=true]{content/circuit1.js}
+
+\newline
+
+\subsection[align=left]{Aufgaben}
+Die Aufgaben sind meist am Ende des Kapitels eingebunden. Sie dienen zur Wiederholung und Überprüfung des Lernfortschritts. Der User erhält ein direktes Feedback, ob die Aufgabe erfolgreich gelöst wurde. Das Ergebnis wird jedoch nicht gespeichert, demnach kann die Aufgabe beliebig oft wiederholt werden. Hier ein Beispiel: \newline \newline
+
+\exercise[type=multipleChoice]{
+    \question{Frage: Was ist ein Quantencomputer?}
+    \possibleAnswers{
+        \item 1) Computer wie sie in Smartphones vorkommen
+        \item 2) Computer der auf Basis quantenmechanischer Zustände arbeitet
+    }
+    \result{2}
+}
+
+\newline
+
+

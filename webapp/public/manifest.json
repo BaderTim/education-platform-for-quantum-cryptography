@@ -1,0 +1,16 @@
+{
+  "short_name": "QC Education Platform",
+  "name": "Education Platform for Quantum Cryptography",
+  "icons": [
+    {
+      "src": "./design/favicon/favicon.ico",
+      "sizes": "96x96 32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#283044",
+  "background_color": "#ffffff"
+  
+}

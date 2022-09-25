@@ -1,0 +1,32 @@
+# .github/workflows/publish.yml
+name: Deploy to Github Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Deploy to Github Pages
+    steps:
+      - name: git-checkout
+        uses: actions/checkout@v2
+
+      - name: Install all dependencies
+        working-directory: ./webapp
+        run: npm install
+
+      - name: Build
+        working-directory: ./webapp
+        run: PUBLIC_URL=https://badertim.github.io/education-platform-for-quantum-cryptography npm run build # The build command of your project
+
+      - name: Push
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: prod # The branch name where you want to push the assets
+          FOLDER: webapp/build # The directory where your assets are generated
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+          MESSAGE: "Build: ({sha}) {msg}" # The commit message

@@ -1,0 +1,344 @@
+<section>
+
+  <table class="table align-middle">
+    <tbody>
+
+      <!-- Table Header -->
+      <tr>
+        <th><h3 class="display-6"></h3></th>
+        <th><h3 class="display-6 fs-2 text-center">Alice</h3></th>
+        <th><h3 class="display-6 fs-2 text-center">öffentlich</h3></th>
+        <th><h3 class="display-6 fs-2 text-center">Bob</h3></th>
+      </tr>
+      
+      <!-- Schritt 1 -->
+      <tr>
+        <!-- Schritt -->
+        <th><h3 class="display-6">1.</h3></th>
+        <!-- Alice -->
+        <td>
+          <label for="alice-bits" class="form-label">Input Bits (nur 1 und 0)</label>
+          <input id="alice-bits" value="01111001111010" class="form-control" />
+          <div id="alice-bits-error" class="text-danger d-none">
+            Die Sequenz ist zu lang.
+          </div>
+        </td>
+        <!-- Geteilt -->
+        <td class="text-center align-center">
+          <!-- X Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+          </svg>
+        </td>
+        <!-- Bob -->
+        <td>
+          
+        </td>
+      </tr>
+
+      <!-- Schritt 2 -->
+      <tr>
+        <!-- Schritt -->
+        <th><h3 class="display-6">2.</h3></th>
+        <!-- Alice -->
+        <td>
+          <label for="alice-bases" class="form-label">Alice's Basen (nur X und Z)</label>
+          <input id="alice-bases" value="XZXZXXZZXZXXZX" class="form-control" />
+          <div id="alice-bases-error" class="text-danger d-none">
+            Die Länge stimmt nicht mit den Input Bits überein.
+          </div>
+          <label for="alice-qubits" class="form-label mt-2">Alice's Qubits</label>
+          <input id="alice-qubits" class="form-control" readonly/>
+        </td>
+        <!-- Geteilt -->
+        <td class="text-center align-center">
+          <!-- X Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+          </svg>
+        </td>
+        <!-- Bob -->
+        <td>
+
+        </td>
+      </tr>
+
+      <!-- Schritt 3 -->
+      <tr>
+        <!-- Schritt -->
+        <th><h3 class="display-6">3.</h3></th>
+        <!-- Alice -->
+        <td>
+   
+        </td>
+        <!-- Geteilt -->
+        <td class="text-center align-center">
+          <label for="shared-qubits" class="form-label">Alice's Qubits</label>
+          <input id="shared-qubits" class="form-control" readonly/>
+        </td>
+        <!-- Bob -->
+        <td>
+
+        </td>
+      </tr>
+
+      <!-- Schritt 4 -->
+      <tr>
+        <!-- Schritt -->
+        <th><h3 class="display-6">4.</h3></th>
+        <!-- Alice -->
+        <td>
+
+        </td>
+        <!-- Geteilt -->
+        <td class="text-center align-center">
+          <!-- X Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+          </svg>
+        </td>
+        <!-- Bob -->
+        <td>
+          <label for="bob-alice-qubits" class="form-label mt-2">Alice's Qubits</label>
+          <input id="bob-alice-qubits" class="form-control" readonly/>
+          <label for="bob-bases" class="form-label mt-2">Bob's Basen (nur X und Z)</label>
+          <input id="bob-bases" value="ZXXXZXXZZXZXZZ" class="form-control" />
+          <div id="bob-bases-error" class="text-danger d-none">
+            Die Länge stimmt nicht mit den Input Bits überein.
+          </div>
+          <label for="bob-result" class="form-label mt-2">Bob's Messung</label>
+          <input id="bob-result" class="form-control" readonly/>
+        </td>
+      </tr>
+
+      <!-- Schritt 5 -->
+      <tr>
+        <!-- Schritt -->
+        <th><h3 class="display-6">5.</h3></th>
+        <!-- Alice -->
+        <td>
+   
+        </td>
+        <!-- Geteilt -->
+        <td class="text-center align-center">
+          <label for="alice-bases-shared" class="form-label">Alice's Basen</label>
+          <input id="alice-bases-shared" class="form-control" readonly/>
+          <label for="bob-bases-shared" class="form-label mt-2">Bob's Basen</label>
+          <input id="bob-bases-shared" class="form-control" readonly/>
+        </td>
+        <!-- Bob -->
+        <td>
+
+        </td>
+      </tr>
+
+      <!-- Schritt 6 -->
+      <tr>
+        <!-- Schritt -->
+        <th><h3 class="display-6">6.</h3></th>
+        <!-- Alice -->
+        <td>
+          <table id="alice-base-table" class="table table-sm text-danger text-center">
+            <tbody>
+              <tr>
+                <th class="text-black text-start">Alice's Basen</th>
+                <td>Z</td>
+                <td>X</td>
+                <td>Z</td>
+                <td class="text-success fw-bold">Z</td>
+                <td>X</td>
+                <td>Z</td>
+                <td>X</td>
+                <td>Z</td>
+                <td class="text-success fw-bold">Z</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <th class="text-black text-start">Bob's Basen</th>
+                <td>X</td>
+                <td>Z</td>
+                <td>X</td>
+                <td class="text-success fw-bold">Z</td>
+                <td>Z</td>
+                <td>X</td>
+                <td>Z</td>
+                <td>X</td>
+                <td class="text-success fw-bold">Z</td>
+                <td>Z</td>
+              </tr>
+              <tr>
+                <th class="text-black text-start">Index</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td class="text-success fw-bold">4</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td class="text-success fw-bold">9</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <!-- Geteilt -->
+        <td class="text-center align-center">
+          <!-- X Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+          </svg>
+        </td>
+        <!-- Bob -->
+        <td>
+          <table id="bob-base-table" class="table table-sm text-danger text-center">
+            <tbody>
+              <tr>
+                <th class="text-black text-start">Alice's Basen</th>
+                <td>Z</td>
+                <td>X</td>
+                <td>Z</td>
+                <td class="text-success fw-bold">Z</td>
+                <td>X</td>
+                <td>Z</td>
+                <td>X</td>
+                <td>Z</td>
+                <td class="text-success fw-bold">Z</td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <th class="text-black text-start">Bob's Basen</th>
+                <td>X</td>
+                <td>Z</td>
+                <td>X</td>
+                <td class="text-success fw-bold">Z</td>
+                <td>Z</td>
+                <td>X</td>
+                <td>Z</td>
+                <td>X</td>
+                <td class="text-success fw-bold">Z</td>
+                <td>Z</td>
+              </tr>
+              <tr>
+                <th class="text-black text-start">Index</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td class="text-success fw-bold">4</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td class="text-success fw-bold">9</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+
+      <!-- Schritt 7 -->
+      <tr>
+        <!-- Schritt -->
+        <th><h3 class="display-6">7.</h3></th>
+        <!-- Alice -->
+        <td>
+          <table id="alice-result-table" class="table table-sm text-center">
+            <tr>
+              <th class="text-start">Index</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="fw-bold">4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="fw-bold">9</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="text-start">Alice's Input</th>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td class="fw-bold">0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td class="fw-bold">1</td>
+              <td>1</td>
+            </tr>
+            <tr class="text-success">
+              <th class="text-start">Schlüssel</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="fw-bold">0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="fw-bold">1</td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+        <!-- Geteilt -->
+        <td class="text-center align-center">
+          <!-- X Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-danger" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+          </svg>
+        </td>
+        <!-- Bob -->
+        <td>
+          <table id="bob-result-table" class="table table-sm text-center">
+            <tr>
+              <th class="text-start">Index</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="fw-bold">4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="fw-bold">9</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="text-start">Bob's Messung</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td class="fw-bold">0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td class="fw-bold">1</td>
+              <td>0</td>
+            </tr>
+            <tr class="text-success">
+              <th class="text-start">Schlüssel</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="fw-bold">0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="fw-bold">1</td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</section>
